@@ -28,6 +28,8 @@ else
 fi
 
 echo "Restaring awslogs service"
-#pkill -f "/usr/bin/aws logs push" || true
+pkill -f "/usr/bin/aws logs push" || true
 sleep 5
-#service awslogs start
+# Amazon Linux 1: service awslogs start
+# Amazon Linux 2:
+sudo systemctl start awslogsd
