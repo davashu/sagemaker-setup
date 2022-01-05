@@ -1,11 +1,10 @@
 #!/bin/bash
+# must be pasted into aws sagemaker configuration
 set -e
 
 # PARAMETERS
 # IDLE_TIME=3600
 IDLE_TIME=600
-
-#sudo yum install -y awslogs
 
 echo "Fetching the autostop script"
 # wget -O autostop.py https://raw.githubusercontent.com/mariokostelac/sagemaker-setup/master/scripts/auto-stop-idle/autostop.py
