@@ -10,6 +10,7 @@ echo 'git config pull.rebase false' >> /home/ec2-user/.bashrc
 conda activate python3
 
 pip install PyAthena
+pip install psycopg2-binary
 # You can also perform "conda install" here as well.
 
 conda deactivate
