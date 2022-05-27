@@ -9,11 +9,14 @@ curl https://raw.githubusercontent.com/davashu/sagemaker-setup/main/bashconfig.s
 
 # This will affect only the Jupyter kernel called "conda_python3".
 conda activate python3
-
 pip install PyAthena
 pip install psycopg2-binary
 # You can also perform "conda install" here as well.
+conda deactivate
 
+# This will affect only the Jupyter kernel called "conda_python3".
+conda activate pytorch_p38
+pip install torchdata
 conda deactivate
 
 EOF
