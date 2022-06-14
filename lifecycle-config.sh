@@ -2,8 +2,8 @@
 set -e
 
 # PARAMETERS
-# IDLE_TIME=3600
-IDLE_TIME=1200
+IDLE_TIME=3600
+# IDLE_TIME=1200
 
 echo "Fetching the autostop script"
 # wget -O autostop.py https://raw.githubusercontent.com/mariokostelac/sagemaker-setup/master/scripts/auto-stop-idle/autostop.py
